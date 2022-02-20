@@ -101,7 +101,7 @@ public class CashRegister {
 				}
 			}
 			if (cashBack >= 0.01) {
-				penny = (int) (cashBack / 0.01);
+				penny = (int)Math.round(cashBack / 0.01);
 				cashBack = cashBack % 0.01;
 				
 				if (penny != 0) {
